@@ -1,0 +1,15 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Author>HanaSi0</Author>
+    <Name>Player Cast Bars</Name>
+    <Punchline>Show small cast bars above party members.</Punchline>
+    <Description>Displays the skill name and casting progress above other party members. Instant actions are hidden. Size, position and player scope are configurable.</Description>
+    <RepoUrl>https://github.com/HanaSi0/Player-skill-casting-bar</RepoUrl>
+    <Tags>party;castbar;combat</Tags>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="tests/**/*.cs" />
+  </ItemGroup>
+</Project>
