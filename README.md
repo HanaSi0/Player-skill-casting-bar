@@ -9,7 +9,7 @@ Dalamud API 15 插件。在其他队友头顶显示技能名称、咏唱进度�
 打开 `/xlsettings` → 实验性（Experimental）→ 自定义插件仓库，添加以下地址并启用、保存：
 
 ```text
-https://github.com/HanaSi0/Player-skill-casting-bar/releases/latest/download/pluginmaster.json
+https://raw.githubusercontent.com/HanaSi0/Player-skill-casting-bar/main/pluginmaster.json
 ```
 
 然后打开 `/xlplugins`，刷新列表，搜索 **Player Cast Bars** 并安装。插件要求 Dalamud API 15；不兼容的客户端需要先使用对应版本的 Dalamud。订阅地址固定，索引随每次成功发布的 Release 自动更新。

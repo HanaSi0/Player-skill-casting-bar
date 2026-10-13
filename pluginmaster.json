@@ -1,0 +1,28 @@
+[
+  {
+    "Author": "HanaSi0",
+    "Name": "Player Cast Bars",
+    "InternalName": "PlayerCastBars",
+    "AssemblyVersion": "0.1.1.0",
+    "Description": "Displays the skill name and casting progress above other party members. Instant actions are hidden. Size, position and player scope are configurable.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/HanaSi0/Player-skill-casting-bar",
+    "Tags": [
+      "party",
+      "castbar",
+      "combat"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Show small cast bars above party members.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/HanaSi0/Player-skill-casting-bar/releases/download/v0.1.1/PlayerCastBars.zip",
+    "DownloadLinkUpdate": "https://github.com/HanaSi0/Player-skill-casting-bar/releases/download/v0.1.1/PlayerCastBars.zip",
+    "DownloadLinkTesting": "https://github.com/HanaSi0/Player-skill-casting-bar/releases/download/v0.1.1/PlayerCastBars.zip",
+    "IsHide": false,
+    "IsTestingExclusive": false
+  }
+]

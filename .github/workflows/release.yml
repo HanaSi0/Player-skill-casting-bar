@@ -61,3 +61,23 @@ jobs:
           else
             gh release create "$RELEASE_TAG" release/PlayerCastBars.zip release/pluginmaster.json release/SHA256SUMS.txt --verify-tag --title "Player Cast Bars $RELEASE_TAG" --notes-file .github/release-notes.md
           fi
+      - name: Update direct third-party repository index
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Publishing an older tag must not downgrade the subscription index.
+          if [ "$(gh release view --json tagName --jq .tagName)" != "$RELEASE_TAG" ]; then
+            exit 0
+          fi
+          git fetch origin main
+          git checkout -B main origin/main
+          cp release/pluginmaster.json pluginmaster.json
+          git add pluginmaster.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Update third-party plugin index for $RELEASE_TAG"
+            git push origin main
+          fi

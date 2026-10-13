@@ -9,6 +9,6 @@
 
 也可以在 `/xlsettings` → 实验性 → 自定义插件仓库中添加订阅地址，再通过 `/xlplugins` 搜索 **Player Cast Bars** 安装：
 
-https://github.com/HanaSi0/Player-skill-casting-bar/releases/latest/download/pluginmaster.json
+https://raw.githubusercontent.com/HanaSi0/Player-skill-casting-bar/main/pluginmaster.json
 
 构建和 14 项逻辑检查通过；实际游戏内渲染与客户端咏唱同步仍需验收。完整说明见仓库 README。
